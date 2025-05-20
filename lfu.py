@@ -15,7 +15,7 @@ FAISS_INDEX_FILE = "faiss_index.bin"
 DATASET_PATH = "/content/drive/MyDrive/cache/realistic_temporal_surges.csv"
 LLM_MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
-MAX_CACHE_SIZE = 1000  # Max number of cached entries for LFU
+MAX_CACHE_SIZE = 500  # Max number of cached entries for LFU
 
 llama_tokenizer = None
 llama_model = None
