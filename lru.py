@@ -88,7 +88,7 @@ def init_gpt_cache():
     return cache
 
 class LRUCacheManager:
-    def __init__(self, cache, max_size=1000):
+    def __init__(self, cache, max_size=500):
         self.cache = cache
         self.max_size = max_size
         self.access_order = OrderedDict()  # key: query hash/id, value: None (just to track order)
