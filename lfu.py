@@ -91,7 +91,7 @@ def init_gpt_cache():
     return cache
 
 class LFUCacheWrapper:
-    def __init__(self, cache: Cache, max_size=1000):
+    def __init__(self, cache: Cache, max_size=500):
         self.cache = cache
         self.max_size = max_size
         self.freq = {}  # query str -> frequency
